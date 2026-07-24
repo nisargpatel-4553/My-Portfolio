@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nisarg Patel — Flutter & Python Developer</title>
+<meta name="description" content="Portfolio of Nisarg Patel, a Flutter and Python developer building clean, high-performance applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#home">Nisarg<span> Patel</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="assets/RESUME.PDF.pdf" download="Nisarg_Patel_Resume.pdf" class="btn btn-outline btn-small">Resume</a>
+
+      <button class="btn btn-outline btn-small" id="loginNavBtn">Login</button>
+
+      <div class="user-chip" id="userChip" hidden>
+        <button class="user-chip-btn" id="userChipBtn">
+          <span class="user-avatar" id="userAvatar">U</span>
+          <span class="user-name" id="userName">User</span>
+        </button>
+        <div class="user-dropdown" id="userDropdown">
+          <button type="button" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-text" data-animate="fade-up">
+      <p class="eyebrow">Hi...! 👋</p>
+      <h1>I'm <span class="highlight">Nisarg <br>Patel</span></h1>
+      
+      <h1 class="hero-role reveal in reveal-delay-2">Flutter Developer</h1>
+      <p class="hero-desc">
+        Passionate Flutter Developer creating beautiful, responsive, and high‑performance
+        mobile applications — with a strong Python foundation in problem solving, data
+        structures, and clean software design.
+      </p>
+      <div class="hero-cta">
+        <a href="assets/RESUME.PDF.pdf" download class="btn btn-primary">Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/nisargpatel-4553" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nisarg-patel-337506374/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/n_i_s_u__4553/?hl=en" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 0 1-1.38-.89 3.72 3.72 0 0 1-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.47.72-2.14 1.39a5.9 5.9 0 0 0-1.39 2.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.47 1.39 2.14a5.9 5.9 0 0 0 2.14 1.39c.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.14-1.39 5.9 5.9 0 0 0 1.39-2.14c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.39-2.14A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+        </a>
+        
+      </div>
+    </div>
+
+
+    <div class="hero-image">
+
+      <div class="glow"></div>
+  
+      <div class="ring"></div>
+  
+      <div class="image-frame">
+          <img src="images/profile.jpg.png" alt="Nisarg Patel" class="profile-image">
+      </div>
+  
+  </div>
+ 
+  
+  
+  </div>
+</section>
+
+
+
+
+
+<section class="work-highlight">
+  <div class="highlight-card">
+    <span class="tag">WHAT I BUILD</span>
+
+    <h2>Turning Ideas into Modern Mobile Apps</h2>
+
+    <p>
+      I create fast, responsive, and scalable Flutter applications with
+      Firebase integration, clean UI, and optimized performance across Android,
+      iOS, and Web.
+    </p>
+
+    <div class="highlight-grid">
+      <div>
+        <h3>📱 Cross Platform</h3>
+        <p>Android • iOS • Web</p>
+      </div>
+
+      <div>
+        <h3>⚡ Fast Performance</h3>
+        <p>Optimized & Responsive UI</p>
+      </div>
+
+      <div>
+        <h3>🔥 Firebase</h3>
+        <p>Authentication & Database</p>
+      </div>
+
+      <div>
+        <h3>🎨 Modern UI</h3>
+        <p>Clean & User Friendly Design</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <p class="section-eyebrow" data-animate="fade-up">About</p>
+    <h2 class="section-title" data-animate="fade-up"> A Closer Look</h2>
+    <div class="about-grid">
+      <div class="about-intro" data-animate="fade-up">
+        <p>
+          I'm a <b>Flutter developer</b> passionate about building modern, responsive, and cross-platform <b>mobile applications</b>. 
+          I focus on writing clean, efficient code and creating user-friendly experiences.
+
+        </p>
+        <p>
+          I also have a strong foundation in <b>Python</b>, with experience in core programming,
+           problem-solving, and building practical <b>projects</b>.
+
+
+        </p>
+       
+        <div class="about-block-title" style="margin-top:44px;">Career Objective</div>
+        <p style="font-size:14.5px;color:var(--text-secondary);line-height:1.8;">
+         To grow as a Flutter developer by building high-quality,
+         user-friendly mobile applications while strengthening my Python skills and continuously
+         learning modern technologies to contribute to impactful software projects.
+        </p>
+       
+        
+      </div>
+
+      <div class="about-cards">
+        <div class="info-card" data-animate="fade-up">
+          <h3>Education</h3>
+          <div class="info-row">
+            <span class="info-year">2025 – Present</span>
+            <div>
+              <p class="info-title">M.Sc. Computer Application &amp; IT</p>
+              <p class="info-sub">Smt. C. K. Patel M.Sc. (CA &amp; IT) College, HNGU University · Kadi, Gujarat</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-year">06/2022 – 03/2025</span>
+            <div>
+              <p class="info-title">B.Sc. Computer Applications &amp; IT</p>
+              <p class="info-sub">Smt. C. K. Patel M.Sc. (CA &amp; IT) College, HNGU University · Kadi, Gujarat</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" data-animate="fade-up">
+          <h3>Personal Info</h3>
+          <ul class="personal-list">
+            <li><span>Location</span><span>Ahmedabad, Gujarat</span></li>
+            <li><span>Email</span><span>nisargpatelk21@gmail.com</span></li>
+            <li><span>Phone</span><span>8153828723</span></li>
+            <li><span>Languages</span><span>English, Gujarati, Hindi</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow" data-animate="fade-up">Skills</p>
+    <h2 class="section-title" data-animate="fade-up">What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-animate="fade-up">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Dart</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="skill-card" data-animate="fade-up">
+        <h3>Frameworks</h3>
+        <ul>
+          <li>Flutter</li>
+          <li>Flask</li>
+       
+        </ul>
+      </div>
+      <div class="skill-card" data-animate="fade-up">
+        <h3>Database</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>phpMyAdmin</li>
+          <li>SQLite</li>
+        </ul>
+      </div>
+      <div class="skill-card" data-animate="fade-up">
+        <h3>Tools</h3>
+        <ul>
+          <li>GitHub</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+  <div class="section-inner">
+    <p class="section-eyebrow" data-animate="fade-up">Projects</p>
+    <h2 class="section-title" data-animate="fade-up">Selected work</h2>
+
+    <div class="projects-grid">
+      <article class="project-card" data-animate="fade-up">
+        <div class="project-media">
+          <svg viewBox="0 0 400 240" class="project-svg"><rect width="400" height="240" fill="#111"/><path d="M40 190 L40 60 L100 60 L100 100 L160 100 L160 60 L220 60 L220 190" stroke="#fff" stroke-width="3" fill="none" opacity="0.5"/><circle cx="300" cy="90" r="24" stroke="#fff" stroke-width="3" fill="none" opacity="0.6"/><path d="M280 130 h40 M270 150 h60" stroke="#fff" stroke-width="3" opacity="0.6"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>Hospital Management System</h3>
+          <p>Web-based system with secure auth, appointment booking, an admin panel, and SQLite-backed records.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">HTML/CSS</span>
+          </div>
+          <a href="https://github.com/nisargpatel-4553" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate="fade-up">
+        <div class="project-media">
+          <svg viewBox="0 0 400 240" class="project-svg"><rect width="400" height="240" fill="#111"/><path d="M60 180 v-90 M120 180 v-60 M180 180 v-120 M240 180 v-40 M300 180 v-70" stroke="#fff" stroke-width="10" opacity="0.55"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>Lost &amp; Found Management System</h3>
+          <p>Flask web app for reporting lost and found items, with login/signup, submission forms, and an admin panel.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">HTML/CSS</span>
+          </div>
+          <a href="https://github.com/nisargpatel-4553" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate="fade-up">
+        <div class="project-media">
+          <svg viewBox="0 0 400 240" class="project-svg"><rect width="400" height="240" fill="#111"/><rect x="150" y="40" width="100" height="160" rx="14" stroke="#fff" stroke-width="3" fill="none" opacity="0.6"/><line x1="180" y1="90" x2="220" y2="90" stroke="#fff" stroke-width="3" opacity="0.6"/><line x1="180" y1="120" x2="220" y2="120" stroke="#fff" stroke-width="3" opacity="0.6"/><circle cx="200" cy="155" r="10" stroke="#fff" stroke-width="3" fill="none" opacity="0.6"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>BMI Calculator Mobile App</h3>
+          <p>Flutter &amp; Dart mobile app with a responsive UI, real-time BMI calculation, and Material Design.</p>
+          <div class="tag-row">
+            <span class="tag">Flutter</span><span class="tag">Dart</span>
+          </div>
+          <a href="https://github.com/nisargpatel-4553" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE / TIMELINE ================= -->
+<section class="experience" id="experience">
+  <div class="section-inner">
+    <p class="section-eyebrow" data-animate="fade-up">Journey</p>
+    <h2 class="section-title" data-animate="fade-up">Education &amp; milestones</h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-animate="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025 – Present</span>
+          <h3>M.Sc. Computer Application &amp; IT</h3>
+          <p>Smt. C. K. Patel M.Sc. (CA &amp; IT) College, HNGU University — deepening core CS foundations
+            alongside Flutter and AI/ML self-study.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-animate="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024</span>
+          <h3>Introduction to Artificial Intelligence — Simplilearn</h3>
+          <p>Completed certification course (Certificate code: 9728886), covering AI/ML fundamentals.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-animate="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 – Present</span>
+          <h3>B.Sc. Computer Applications &amp; IT</h3>
+          <p>Smt. C. K. Patel M.Sc. (CA &amp; IT) College, HNGU University — built a foundation in
+            programming, databases, and web development while shipping personal projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow" data-animate="fade-up">Contact</p>
+    <h2 class="section-title" data-animate="fade-up">Let's build something</h2>
+
+    <div class="contact-grid">
+      <form class="contact-form" data-animate="fade-up" id="contactForm" action="https://formsubmit.co/nisargpatelk21@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Portfolio Contact Message">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-info" data-animate="fade-up">
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <a href="tel:8153828723">8153828723</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:nisargpatelk21@gmail.com">nisargpatelk21@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span>Ahmedabad, Gujarat</span>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/nisargpatel-4553" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/nisarg-patel-337506374/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>&copy; <span id="year"></span> Nisarg Patel. All rights reserved.</p>
+    <div class="social-row">
+      <a href="https://github.com/nisargpatel-4553" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon small">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/nisarg-patel-337506374/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon small">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+     
+    </div>
+  </div>
+</footer>
+
+<!-- ================= AUTH MODAL ================= -->
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+    <button class="auth-close" id="authClose" aria-label="Close">&times;</button>
+
+    <div class="auth-tabs" id="authTabs">
+      <button type="button" class="auth-tab active" data-tab="login">Login</button>
+      <button type="button" class="auth-tab" data-tab="signup">Sign Up</button>
+    </div>
+
+    <!-- LOGIN PANEL -->
+    <form class="auth-panel active" id="loginPanel" novalidate>
+      <h3 id="authModalTitle">Welcome Back</h3>
+      <div class="form-row">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" required placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Login</button>
+      <p class="auth-note" id="loginNote" aria-live="polite"></p>
+      <a href="#" class="auth-link" id="forgotLink">Forgot Password?</a>
+    </form>
+
+    <!-- SIGNUP PANEL -->
+    <form class="auth-panel" id="signupPanel" novalidate>
+      <h3>Create Account</h3>
+      <div class="form-row">
+        <label for="signupName">Name</label>
+        <input type="text" id="signupName" required placeholder="Your name" autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" required placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" required placeholder="Min. 6 characters" autocomplete="new-password" minlength="6">
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Sign Up</button>
+      <p class="auth-note" id="signupNote" aria-live="polite"></p>
+    </form>
+
+    <!-- FORGOT PASSWORD PANEL -->
+    <form class="auth-panel" id="forgotPanel" novalidate>
+      <h3>Reset Password</h3>
+      <p class="auth-sub">Enter your email and we'll send you a reset link.</p>
+      <div class="form-row">
+        <label for="forgotEmail">Email</label>
+        <input type="email" id="forgotEmail" required placeholder="you@example.com" autocomplete="email">
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Send Reset Link</button>
+      <p class="auth-note" id="forgotNote" aria-live="polite"></p>
+      <a href="#" class="auth-link" id="backToLogin">← Back to Login</a>
+    </form>
+  </div>
+</div>
+
+<!-- ================= FIREBASE ================= -->
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
